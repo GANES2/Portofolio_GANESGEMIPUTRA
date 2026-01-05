@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="JavaScript">
+  <defs>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="10" y="10" width="76" height="76" rx="18" fill="#F7DF1E" filter="url(#s)"/>
+  <text x="48" y="56" text-anchor="middle" font-family="Inter,system-ui,Segoe UI,Arial" font-size="28" font-weight="800" fill="#111827">JS</text>
+</svg>
