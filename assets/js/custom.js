@@ -147,7 +147,7 @@
 
       return `
         <div class="${colClass}">
-          <article class="cert-card ${variant === "featured" ? "cert-card--featured" : ""}" data-cert-index="${c._idx}">
+          <article class="cert-card ${variant === "featured" ? "cert-card--featured" : ""} ${c.title.includes("Front-End") ? "cert-card--meta" : ""}" data-cert-index="${c._idx}">
             <div class="cert-thumb">
               <img src="${img}" alt="Preview ${title}" loading="lazy" />
               <div class="cert-overlay"></div>

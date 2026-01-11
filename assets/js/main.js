@@ -218,6 +218,8 @@
       if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
         document.querySelectorAll('.navmenu a.active').forEach(link => link.classList.remove('active'));
         navmenulink.classList.add('active');
+        // Save current section to localStorage
+        localStorage.setItem('activeSection', navmenulink.hash);
       } else {
         navmenulink.classList.remove('active');
       }
@@ -225,5 +227,22 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  /**
+   * Restore scroll position on page load
+   */
+  window.addEventListener('load', function() {
+    const activeSection = localStorage.getItem('activeSection');
+    if (activeSection && document.querySelector(activeSection)) {
+      setTimeout(() => {
+        let section = document.querySelector(activeSection);
+        let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
+        window.scrollTo({
+          top: section.offsetTop - parseInt(scrollMarginTop),
+          behavior: 'smooth'
+        });
+      }, 100);
+    }
+  });
 
 })();

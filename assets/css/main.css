@@ -2241,6 +2241,11 @@ section.section, section, .section {
   }
 }
 
+/* Front-End Meta certificate bluish background */
+.cert-card--meta .cert-thumb img {
+  filter: hue-rotate(220deg) saturate(1.1) brightness(1.05);
+}
+
 
 /* ===== Premium Home Tweaks (Hero + Stats) ===== */
 .hero .hero-sub { margin-bottom: 6px; }
