@@ -378,6 +378,7 @@ h6 {
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
+<<<<<<< HEAD
 .footer .copyright {
   text-align: center;
   font-weight: 500;
@@ -396,6 +397,8 @@ h6 {
   opacity: 1;
 }
 
+=======
+>>>>>>> dd21e8e1e56ab5cf07cb7c2c214fe76011240be2
 .footer .copyright p {
   margin-bottom: 0;
 }
@@ -1832,6 +1835,7 @@ section.section, section, .section {
 .modal .modal-header .btn-close:focus {
   box-shadow: 0 0 0 .25rem rgba(13,110,253,.15);
 }
+<<<<<<< HEAD
 
 
 /* === Premium Certificates UI (custom) === */
@@ -2346,3 +2350,5 @@ section.section, section, .section {
   margin: 8px 0 8px;
   color: var(--heading-color);
 }
+=======
+>>>>>>> dd21e8e1e56ab5cf07cb7c2c214fe76011240be2
